@@ -5,8 +5,6 @@
 
 int buttonState = 0;
 int lastbuttonState = 0;
-
-int rangeValue = 0;
 int dly = 0;
 
 
@@ -46,7 +44,7 @@ int sensorRange(){
 
 //write pulse duration in milliseconds
 int durationRange(){
-  rangeValue = sensorRange();
+  int rangeValue = sensorRange();
 
 if (rangeValue > 0 && rangeValue < 25){
   dly = 25;
